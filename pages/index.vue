@@ -3,7 +3,7 @@
     id="background"
     class="bg-no-repeat bg-cover bg-center"
     style="
-      background: url(https://assets.atomic.radio/tracks/artworks/6854859064262791168.jpg?width=200&height=200&sa=webp);
+      background: url(artwork.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -15,13 +15,13 @@
           <div class="py-16">
             <div class="text-base text-xl leading-6 font-bold text-white select-none text-center lg:hidden">
               <p class="font-light">POWERED BY</p>
-              <p class="-mt-1.5 uppercase">{{ config.name }}</p>
+              <p class="-mt-1.5 uppercase">CATSNODE</p>
             </div>
             <div class="flex items-center justify-between text-white select-none hidden lg:flex">
               <!-- POWERED BY -->
               <div class="text-base lg:text-xl leading-6 font-bold">
                 <p class="font-light">POWERED BY</p>
-                <p class="-mt-1.5 uppercase">{{ config.name }}</p>
+                <p class="-mt-1.5 uppercase">CATSNODE</p>
               </div>
               <!-- LISTENERS -->
               <div class="text-base lg:text-xl font-light">
@@ -68,7 +68,7 @@
                       id="artwork"
                       class="object-contain h-full w-24 lg:w-44 rounded-xl"
                       alt=""
-                      src="https://assets.atomic.radio/tracks/artworks/6854859064262791168.jpg?width=200&height=200&sa=webp"
+                      src="artwork.webp"
                     />
                   </div>
                 </div>
@@ -129,10 +129,6 @@ import Vue from "vue"
 export default Vue.extend({
   data() {
     return {
-      config: {
-        name: process.env.NAME,
-        artworkUrl: process.env.RADIOBOSS_ARTWORK
-      },
       currentTrack: {
         title: "TITLE",
         artist: "ARTIST",
