@@ -1,0 +1,25 @@
+name: Build
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Running build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - uses: actions/cache@v2
+        name: Configure npm caching
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/workflows/build.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+      - run: npm install
+      - run: npm run build
