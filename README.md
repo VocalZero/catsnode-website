@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Free to use Nuxt.JS radio template by catsno.de.
+  Free to use Nuxt.JS radio template with tailwindcss by catsno.de.
 </p>
 
 <img src="https://github.com/VocalZero/catsnode-website/blob/master/static/screenshot.png" />
