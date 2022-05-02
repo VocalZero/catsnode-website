@@ -24,7 +24,7 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.1",
     "@types/xml2js": "^0.4.11",
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.4.7",
     "babel-eslint": "^10.1.0",
     "chromedriver": "^100.0.0",
     "eslint": "^8.13.0",
